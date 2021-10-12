@@ -348,57 +348,61 @@
           </ul>
         </div>
       </section>
+
+      <!-- Постоянные клиенты  -->
+
+      <section class="clients">
+        <div class="container">
+          <h2 class="header2">Постоянные клиенты</h2>
+          <ul class="list clients_list">
+            <li class="clients_item">
+              <button class="client_button" type="button">
+                <svg class="client_icon" width="106px" height="60px">
+                  <use href="./images/sprite.svg#icon-company01"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="clients_item">
+              <button class="client_button">
+                <svg class="client_icon" width="106px" height="60px">
+                  <use href="./images/sprite.svg#icon-company02"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="clients_item">
+              <button class="client_button">
+                <svg class="client_icon" width="106px" height="60px">
+                  <use href="./images/sprite.svg#icon-company03"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="clients_item">
+              <button class="client_button">
+                <svg class="client_icon" width="106px" height="60px">
+                  <use href="./images/sprite.svg#icon-company04"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="clients_item">
+              <button class="client_button">
+                <svg class="client_icon" width="106px" height="60px">
+                  <use href="./images/sprite.svg#icon-company05"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="clients_item">
+              <button class="client_button">
+                <svg class="client_icon" width="106px" height="60px">
+                  <use href="./images/sprite.svg#icon-company06"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
-    <section class="clients">
-      <div class="container">
-        <h2 class="header2">Постоянные клиенты</h2>
-        <ul class="list clients_list">
-          <li class="clients_item">
-            <button class="client_button" type="button">
-              <svg class="client_icon" width="106px" height="60px">
-                <use href="./images/sprite.svg#icon-company01"></use>
-              </svg>
-            </button>
-          </li>
-          <li class="clients_item">
-            <button class="client_button">
-              <svg class="client_icon" width="106px" height="60px">
-                <use href="./images/sprite.svg#icon-company02"></use>
-              </svg>
-            </button>
-          </li>
-          <li class="clients_item">
-            <button class="client_button">
-              <svg class="client_icon" width="106px" height="60px">
-                <use href="./images/sprite.svg#icon-company03"></use>
-              </svg>
-            </button>
-          </li>
-          <li class="clients_item">
-            <button class="client_button">
-              <svg class="client_icon" width="106px" height="60px">
-                <use href="./images/sprite.svg#icon-company04"></use>
-              </svg>
-            </button>
-          </li>
-          <li class="clients_item">
-            <button class="client_button">
-              <svg class="client_icon" width="106px" height="60px">
-                <use href="./images/sprite.svg#icon-company05"></use>
-              </svg>
-            </button>
-          </li>
-          <li class="clients_item">
-            <button class="client_button">
-              <svg class="client_icon" width="106px" height="60px">
-                <use href="./images/sprite.svg#icon-company06"></use>
-              </svg>
-            </button>
-          </li>
-        </ul>
-      </div>
-    </section>
+    <!-- Подвал -->
 
     <footer class="site_footer">
       <div class="container">
@@ -453,6 +457,25 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe">
+          <p class="header3">Подпишитесь на рассылку</p>
+          <form class="subscribe_mail">
+            <label for="subscribe_mail"></label>
+            <input
+              class="subscribe_input"
+              type="email"
+              name="email"
+              id="subscribe_mail"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="button subscribe_button">
+              Подписаться
+              <svg class="subscribe_mail_icon">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -462,6 +485,19 @@
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="order_form_header">Оставьте свои данные, мы вам перезвоним</p>
+        <form action="#" class="order_form">
+          <input type="text" name="user_name" class="form_input" />
+          <input type="text" name="user_tel" class="form_input" />
+          <input type="text" name="user_mail" class="form_input" />
+          <input
+            type="text"
+            name="user_comment"
+            class="form_input"
+            placeholder="Введите текст"
+          />
+          <button type="submit" class="button">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
