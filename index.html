@@ -487,15 +487,34 @@
         </button>
         <p class="order_form_header">Оставьте свои данные, мы вам перезвоним</p>
         <form action="#" class="order_form">
-          <input type="text" name="user_name" class="form_input" />
-          <input type="text" name="user_tel" class="form_input" />
-          <input type="text" name="user_mail" class="form_input" />
-          <input
-            type="text"
-            name="user_comment"
-            class="form_input"
-            placeholder="Введите текст"
-          />
+          <label>
+            <p class="order_input_text">Иия</p>
+            <input type="text" name="user_name" class="form_input" />
+          </label>
+          <label>
+            <p class="order_input_text">Телефон</p>
+            <input type="tel" name="user_tel" class="form_input" />
+          </label>
+          <label>
+            <p class="order_input_text">Почта</p>
+            <input type="email" name="user_mail" class="form_input" />
+          </label>
+          <label>
+            <p class="order_input_text">Комментарий</p>
+            <textarea
+              class="order_comment"
+              name=""
+              id=""
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <div class="order_checkbox">
+            <label>
+              <input type="checkbox" name="agreement" />
+              Соглашаюсь с рассылкой и принимаю
+              <a class="agreement_link" href="">Условия договора</a>
+            </label>
+          </div>
           <button type="submit" class="button">Отправить</button>
         </form>
       </div>
