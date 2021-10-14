@@ -489,32 +489,53 @@
         <form action="#" class="order_form">
           <label>
             <p class="order_input_text">Иия</p>
-            <input type="text" name="user_name" class="form_input" />
+            <span class="input_wrapper">
+              <input type="text" name="user_name" class="form_input" />
+              <svg class="input_icon">
+                <use href="./images/sprite.svg#icon-user-name"></use>
+              </svg>
+            </span>
           </label>
           <label>
             <p class="order_input_text">Телефон</p>
-            <input type="tel" name="user_tel" class="form_input" />
+            <span class="input_wrapper">
+              <input type="tel" name="user_tel" class="form_input" />
+              <svg class="input_icon">
+                <use href="./images/sprite.svg#icon-user-tel"></use>
+              </svg>
+            </span>
           </label>
           <label>
             <p class="order_input_text">Почта</p>
-            <input type="email" name="user_mail" class="form_input" />
+            <span class="input_wrapper">
+              <input type="email" name="user_mail" class="form_input" />
+              <svg class="input_icon">
+                <use href="./images/sprite.svg#icon-user-mail"></use>
+              </svg>
+            </span>
           </label>
           <label>
             <p class="order_input_text">Комментарий</p>
             <textarea
               class="order_comment"
-              name=""
-              id=""
+              name="order_comment"
               placeholder="Введите текст"
             ></textarea>
           </label>
-          <div class="order_checkbox">
-            <label>
-              <input type="checkbox" name="agreement" />
-              Соглашаюсь с рассылкой и принимаю
-              <a class="agreement_link" href="">Условия договора</a>
-            </label>
-          </div>
+          <label class="checkbox_text">
+            <input
+              type="checkbox"
+              name="agreement"
+              class="order_checkbox visually-hidden"
+            />
+            <span class="custom_checkbox">
+              <svg class="checkbox_icon">
+                <use href="./images/sprite.svg#icon-checkbox"></use>
+              </svg>
+            </span>
+            Соглашаюсь с рассылкой и принимаю&nbsp;
+            <a class="agreement_link" href="">Условия договора</a>
+          </label>
           <button type="submit" class="button">Отправить</button>
         </form>
       </div>
